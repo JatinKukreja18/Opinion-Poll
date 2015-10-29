@@ -1,0 +1,14 @@
+
+<div><p ng-hide="question==undefined" id="question" >Q:{{question}}</p>
+	<p>{{empty}}</p>
+	<ul	id="answer"> 
+	
+	<li ng-repeat="ans in answer">{{ans}}  </li>
+	
+	</ul>
+
+</div>
+
+
+<button ng-hide="question==undefined""type="button" ng-click="nextQ()">Next Question!</button>
+<button ng-hide="question==undefined"type="button" ng-click="prevQ()">Previous Question!</button>
