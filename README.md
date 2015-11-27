@@ -1,0 +1,2 @@
+# Opinion-Poll
+A web application developed using MEAN stack. The application provides Admins with the functionality to create and manage multiple questionnaires. The user can select a questionnaire and submit responses for numerous questions of the same. The results are stored for analysis in database in JSON format. This comes with a Search Box to provide a feature of Prompt word Search while creating a Question to make the application user friendly.
