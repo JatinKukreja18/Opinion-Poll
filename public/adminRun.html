@@ -1,0 +1,24 @@
+
+<div>
+
+<ul>
+<li ng-hide="Chosen=undefined" ng-repeat="all in AllQ" ng-click="ChosenQ(all)">{{all}}  </li>
+
+</li>
+</ul>
+<p ng-hide="Chosen==undefined">{{questionaireName}} </p>
+
+<ul ng-hide="Chosen==undefined">
+	<li ng-repeat="bunches in bunch" ><p  id="question" >Q{{bunches.Qnumber}}:{{bunches.ques}}</p>
+	<p>{{empty}}</p>
+	
+	<ul	id="answer"> 
+	
+	<li ng-repeat="ans in answer">{{ans}}  </li>
+	
+	</ul>
+	</li>
+</ul>
+</div>
+
+

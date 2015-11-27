@@ -1,0 +1,25 @@
+<div>
+
+<ul>
+<li	class="AllQ" ng-hide="Chosen!=undefined" ng-repeat="all in AllQ " ng-click="ChosenQ(all)">{{all}}</li>
+
+</li>
+</ul>
+<button ng-hide="Chosen==undefined""type="button" ng-click="Back()"><--Back</button>
+<button ng-hide="Chosen==undefined""type="button" ng-click="nextQ()">Next Question!</button>
+<button ng-hide="Chosen==undefined"type="button" ng-click="prevQ()">Previous Question!</button>
+<p ng-hide="Chosen==undefined" >Questionnaire by {{loggedIn}}</p>
+
+<p  ng-hide="Chosen==undefined" id="question" >Q:{{question}}</p>
+	<p>{{empty}}</p>
+	<ul ng-hide="Chosen==undefined"	id="answer"> 
+	
+	<li ng-repeat="answer in answers">{{answer}}<button class="abc" type="radio" name="buttonreply" value="i" ></button></li>
+	
+	</ul>	
+
+
+<button ng-hide="Chosen==undefined" type="button" ng-click="submit()">Submit</button>
+</div>
+
+

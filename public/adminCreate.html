@@ -1,0 +1,45 @@
+<div ng-controller="control">
+
+
+<p>Hi  {{loggedIn}}</p>
+<button type="button" ng-hide="click!=2" ng-click="Back(1)"> <-Back</button>
+<button type="button" ng-hide="Questionaire==undefined" ng-click="Back(2)"> <-Back</button> <br><hr>
+<p ng-hide="click!=2" >Please Enter Questionnaire Name </p><br>
+<input  type="text" id="input" ng-hide="click!=2" ng-model="questionaireName" value="answer"></input>
+<div class="row">
+
+<button type="button" ng-hide="click!=2" ng-click="Next()">Next!</button>
+
+<div class="col-md-6">
+<button id="BigButton" type="button" ng-hide="click!=undefined"><a ng-href="/#/adminRun">View My Questionnaires</a></button>
+</div>
+<div class="col-md-6">
+<button id="BigButton" type="button" ng-hide="click!=undefined" ><a id="clickme" ng-click="clicked()" ng-model="click">Create New Questionnaire</a></button>
+</div>
+
+<p ng-hide="Questionaire==undefined" id="question" >Q:{{question}}</p>
+<ul id="answer"> <li ng-repeat="answer in AnswersCopy  track by $index">{{answer}}  </li>
+</ul>
+
+
+
+<form ng-hide="Questionaire==undefined">
+
+	
+<p>What would you like to create?</p>
+<input type="radio" ng-model="choice" value="question">The question<br>
+<input  type="radio" ng-model="choice" value="answer">The Answers
+
+</form>
+
+
+
+<button type="button" ng-hide="Questionaire==undefined" ng-click="New()">Next question!</button>
+<button type="button" ng-hide="Questionaire==undefined" ng-click="submitQ()">Submit!</button>
+<button type="button" ng-hide="Questionaire==undefined"ng-click="Store()"> ok!</button>
+
+<first-directive    ng-hide="Questionaire==undefined" view-data= "filteredData"  active-index="activeIndex" search-text="searchText"  controller-key="controllerKey($event)" controller-push="controllerPush(search)" controller-function="controllerFunction(search)">
+
+</first-directive>
+</div>
+</div>

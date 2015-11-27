@@ -1,0 +1,150 @@
+@import "compass/css3";
+html{height:100%;}
+ #table {
+  font-size: 150%;
+  font-family: "Courier New", Courier, monospace;
+  font-weight:500;
+  border: 10%;
+  border-radius: 3px;
+  margin-left:19%;
+  color: snow;
+  background-color:#D0ABF5;
+  width:45%;
+  text-align: center;
+ }
+::-webkit-input-placeholder{
+ color:snow;}
+.highlight
+{
+color :red;
+}
+ a{
+	color:snow !important ;
+ }
+ a:hover{
+	 text-decoration:none !important;
+ }
+ 
+.highlight{
+	background-color:#4C1A80;
+	
+} 
+table, th, td {
+
+  padding: 4%;
+
+}
+#answer {
+  width: cover;
+  font-size: 160%;
+  color: black;
+  border: none;
+  height: 10%;
+  background: #9766C9;
+  font-family: "Courier New", Courier, monospace;
+margin: 0% 0% 2% 0%;	
+ 
+}
+.abc{
+	
+	margin-top:2%;
+	
+
+border-color: white;
+
+}
+#question{
+ font-size: 160%;
+	
+  font-family: "Courier New", Courier, monospace;
+  width:100%;
+  color: black;
+	
+}
+ul{
+ font-size: 100%%;
+	margin : 4%;
+  font-family: "Courier New", Courier, monospace;
+  width:100%;
+  list-style-position: inside;
+  color: black;
+	
+}
+
+float:left
+input[placeholder] { 
+text-overflow: ellipsis;
+
+ }
+.AllQ:hover{
+	color:white;
+	
+}
+#BigButton{
+	display:block;
+    margin-left:6%;
+	float:left;
+	font-size:120%;
+	padding:6%;
+	border-color: rebeccapurple;
+	background: linear-gradient(#D0ABF5, #6B24B2);
+	
+}
+button{
+ float: left;
+    margin-right: -1%;
+	margin-left:1%;
+color: snow;
+float:right;
+font-size:180%;
+
+border-color: rebeccapurple;
+background: linear-gradient(#D0ABF5, #6B24B2);
+}
+#newBut{
+ float: left;
+    margin-right: -1%;
+color: snow;
+float:right;
+font-size:180%;
+
+border-color: rebeccapurple;
+background: linear-gradient(#D0ABF5, #6B24B2);
+}
+
+ #sec {
+  font-size: 200%;
+  font-family: "Courier New", Courier, monospace;
+  background: #6B24B2;
+  width:100%;
+  padding: 2%;
+  color: snow;
+  }
+  
+ #input {
+  width: 45%;
+  height: 10%;
+  list-style-position: inside;
+  border-radius: 2px;
+  float:left;
+  color: white;
+  background-color:#D0ABF5;
+  margin-left:19%;
+  font-size: 2em;
+  font-family:  "Courier New", Courier, monospace;
+  text-indent: 5%;
+} 
+ #input-log {
+  width: 45%;
+  height: 10%;
+  border-radius: 2px;
+  float:left;
+  list-style-position: inside;
+  margin:6%;
+  color: white;
+  background-color:#D0ABF5;
+  margin-left:19%;
+  font-size: 2em;
+  font-family:  "Courier New", Courier, monospace;
+  text-indent: 5%;
+} 
